@@ -4,70 +4,154 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>EA Digital Card</title>
+<title>EA | Digital Portfolio</title>
 
 <style>
 body{
 margin:0;
-background:#111;
-color:white;
 font-family:tahoma;
+background:#ffffff;
+color:#111;
 display:flex;
 justify-content:center;
-align-items:center;
-height:100vh;
 }
 
-.card{
-background:rgba(255,255,255,.1);
-backdrop-filter:blur(20px);
-padding:40px;
-border-radius:25px;
+.container{
+max-width:800px;
+padding:60px 20px;
 text-align:center;
-width:320px;
 }
 
-img{
+/* لوگو */
+.logo{
+font-size:28px;
+font-weight:bold;
+letter-spacing:2px;
+margin-bottom:20px;
+}
+
+/* عکس پروفایل */
+.avatar{
 width:120px;
 height:120px;
 border-radius:50%;
 object-fit:cover;
-margin-bottom:20px;
+margin:20px auto;
+border:2px solid #eee;
 }
 
-a{
+/* جمله */
+.quote{
+font-size:18px;
+color:#444;
+margin:20px 0 40px;
+}
+
+/* دکمه‌ها */
+.buttons a{
 display:block;
-margin:12px 0;
+margin:10px auto;
 padding:12px;
-background:#ffffff22;
-color:white;
-text-decoration:none;
+max-width:250px;
+border:1px solid #ddd;
 border-radius:12px;
-transition:.3s;
+text-decoration:none;
+color:#111;
+transition:0.3s;
 }
 
-a:hover{
-background:#ffffff44;
+.buttons a:hover{
+background:#f5f5f5;
 }
+
+/* بخش‌ها */
+.section{
+margin-top:60px;
+text-align:right;
+}
+
+.section h2{
+font-size:20px;
+margin-bottom:10px;
+}
+
+.section p{
+color:#555;
+line-height:1.8;
+}
+
+/* نمونه کار */
+.portfolio{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+gap:10px;
+margin-top:20px;
+}
+
+.box{
+height:120px;
+background:#f3f3f3;
+border-radius:12px;
+display:flex;
+align-items:center;
+justify-content:center;
+color:#999;
+font-size:14px;
+}
+
+/* QR */
+.qr{
+margin-top:40px;
+padding:20px;
+border:1px dashed #ddd;
+border-radius:12px;
+}
+
 </style>
 
 </head>
 
 <body>
 
-<div class="card">
+<div class="container">
 
-<h1>EA</h1>
+<div class="logo">EA</div>
 
-<p>کارت ویزیت دیجیتال</p>
+<img class="avatar" src="https://via.placeholder.com/150" />
 
+<div class="quote">
+«سادگی، بالاترین سطح حرفه‌ای بودن است.»
+</div>
+
+<div class="buttons">
 <a href="#">تماس</a>
-
 <a href="#">واتساپ</a>
-
 <a href="#">تلگرام</a>
-
 <a href="#">اینستاگرام</a>
+</div>
+
+<div class="section">
+<h2>درباره من</h2>
+<p>
+این قسمت معرفی کوتاه شماست. می‌تونی اینجا توضیح بدی چه کاری انجام میدی و چه خدماتی ارائه میدی.
+</p>
+</div>
+
+<div class="section">
+<h2>نمونه‌کارها</h2>
+
+<div class="portfolio">
+<div class="box">Project 1</div>
+<div class="box">Project 2</div>
+<div class="box">Project 3</div>
+<div class="box">Project 4</div>
+</div>
+
+</div>
+
+<div class="qr">
+📱 QR Code اینجا قرار می‌گیرد
+</div>
 
 </div>
 
