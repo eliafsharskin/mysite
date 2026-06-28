@@ -65,3 +65,17 @@ body::after{
     filter:blur(150px);
     z-index:-1;
 }
+nav{
+backdrop-filter:blur(18px);
+background:rgba(255,255,255,.82);
+border:1px solid rgba(15,23,42,.08);
+box-shadow:0 15px 40px rgba(15,23,42,.08);
+}
+
+nav a{
+transition:.3s;
+}
+
+nav a:hover{
+color:#0f172a;
+}
