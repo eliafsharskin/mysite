@@ -79,3 +79,54 @@ transition:.3s;
 nav a:hover{
 color:#0f172a;
 }
+/* Smooth Animations */
+section{
+    opacity:0;
+    transform:translateY(40px);
+    animation:fadeUp .9s ease forwards;
+}
+
+section:nth-child(2){animation-delay:.2s;}
+section:nth-child(3){animation-delay:.4s;}
+section:nth-child(4){animation-delay:.6s;}
+section:nth-child(5){animation-delay:.8s;}
+section:nth-child(6){animation-delay:1s;}
+
+@keyframes fadeUp{
+    from{
+        opacity:0;
+        transform:translateY(40px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+/* Luxury Border */
+
+.glass{
+    position:relative;
+    overflow:hidden;
+}
+
+.glass::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    border-radius:40px;
+    padding:1px;
+    background:linear-gradient(
+    135deg,
+    rgba(15,23,42,.18),
+    rgba(255,255,255,.8),
+    rgba(15,23,42,.08)
+    );
+
+    -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+
+    -webkit-mask-composite:xor;
+    mask-composite:exclude;
+}
